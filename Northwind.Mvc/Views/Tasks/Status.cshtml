@@ -1,0 +1,24 @@
+@model TaskViewModel
+
+@{
+    string CSHTML = "Status.cshtml";
+    string pageTitle = Model.Task;
+    string documentTitle = AppHelper.DocumentTitle(pageTitle);
+}
+
+<h4>@pageTitle</h4>
+
+@Html.Raw(ViewBag.Status)
+
+<script>
+    $(function () {
+        try {
+            var model = @Html.Raw(JsonConvert.SerializeObject(Model));
+
+            $(document).prop("title", "@Html.Raw(documentTitle)");
+            zShowOperationResult(model.OperationResult);
+        } catch (exception) {
+            zAlert(zExceptionMessage("@CSHTML", "function", exception));
+        }
+    });
+</script>

@@ -1,0 +1,137 @@
+﻿@model AuditTrailLogItemModel
+
+@{
+    string CSHTML = "_AuditTrailLogItem.cshtml";
+
+    IZProfile profile = DataHelper.GetProfile(typeof(AuditTrailLog));
+    // Associations (FK)
+}
+
+<div id="Item_AuditTrailLog">
+    @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+
+    @Html.HiddenFor(model => model.ControllerAction, new { id = "AuditTrailLog_Item_ControllerAction" })
+    @Html.HiddenFor(model => model.MasterEntity, new { id = "AuditTrailLog_Item_MasterEntity" })
+    @Html.HiddenFor(model => model.MasterKey, new { id = "AuditTrailLog_Item_MasterKey" })
+    @Html.ZHiddenFor(model => model.IsReadOnly, "AuditTrailLog_Item_IsReadOnly")
+    @Html.ZHiddenFor(model => model.IsSave, "AuditTrailLog_Item_IsSave")
+
+    @{Html.EJ().Tab("Tab_AuditTrailLog")
+        .ClientSideEvents(clientEvent => clientEvent
+            .ItemActive("itemActive_Tab_AuditTrailLog")
+        )
+        //.EnablePersistence()
+        .Items(data =>
+        {
+            data.Add().ID("TabSheet_AuditTrailLog_AuditTrailLog").Text(AuditTrailLogResources.EntitySingular).ContentTemplate(@<div class="@AppDefaults.CSSClassPanel">
+                
+                <div id="Group_AuditTrailLog_Id" class="@profile.EditCSSFor("Id")">
+                    @Html.LabelFor(model => model.AuditTrailLog.Id, new { @class = profile.EditCSSLabelFor("Id") })
+                    @Html.EditorFor(model => model.AuditTrailLog.Id, new { htmlAttributes = new { @class = profile.EditCSSEditorFor("Id"), id = "AuditTrailLog_Id" } })
+                    @* @Html.ValidationMessageFor(model => model.AuditTrailLog.Id, "", new { @class = AppDefaults.CSSClassValidator }) *@
+                </div>
+                
+                <div id="Group_AuditTrailLog_LogDate" class="@profile.EditCSSFor("LogDate")">
+                    @Html.LabelFor(model => model.AuditTrailLog.LogDate, new { @class = profile.EditCSSLabelFor("LogDate") })
+                    @* @Html.EditorFor(model => model.AuditTrailLog.LogDate, new { htmlAttributes = new { @class = profile.EditCSSEditorFor("LogDate"), id = "AuditTrailLog_LogDate" } }) *@
+                    @Html.EJ().DateTimePickerFor(model => model.AuditTrailLog.LogDate, AppHelper.DateTimeModel, new { @class = profile.EditCSSEditorDateTimeFor("LogDate"), id = "AuditTrailLog_LogDate" })
+                    @* @Html.ValidationMessageFor(model => model.AuditTrailLog.LogDate, "", new { @class = AppDefaults.CSSClassValidator }) *@
+                </div>
+                
+                <div id="Group_AuditTrailLog_LogTime" class="@profile.EditCSSFor("LogTime")">
+                    @Html.LabelFor(model => model.AuditTrailLog.LogTime, new { @class = profile.EditCSSLabelFor("LogTime") })
+                    @* @Html.EditorFor(model => model.AuditTrailLog.LogTime, new { htmlAttributes = new { @class = profile.EditCSSEditorFor("LogTime"), id = "AuditTrailLog_LogTime" } }) *@
+                    @Html.EJ().DateTimePickerFor(model => model.AuditTrailLog.LogTime, AppHelper.DateTimeModel, new { @class = profile.EditCSSEditorDateTimeFor("LogTime"), id = "AuditTrailLog_LogTime" })
+                    @* @Html.ValidationMessageFor(model => model.AuditTrailLog.LogTime, "", new { @class = AppDefaults.CSSClassValidator }) *@
+                </div>
+                
+                <div id="Group_AuditTrailLog_LogUserName" class="@profile.EditCSSFor("LogUserName")">
+                    @Html.LabelFor(model => model.AuditTrailLog.LogUserName, new { @class = profile.EditCSSLabelFor("LogUserName") })
+                    @Html.EditorFor(model => model.AuditTrailLog.LogUserName, new { htmlAttributes = new { @class = profile.EditCSSEditorFor("LogUserName"), id = "AuditTrailLog_LogUserName" } })
+                    @* @Html.ValidationMessageFor(model => model.AuditTrailLog.LogUserName, "", new { @class = AppDefaults.CSSClassValidator }) *@
+                </div>
+
+                @Html.ZNewLine()
+                
+                <div id="Group_AuditTrailLog_LogDomain" class="@profile.EditCSSFor("LogDomain")">
+                    @Html.LabelFor(model => model.AuditTrailLog.LogDomain, new { @class = profile.EditCSSLabelFor("LogDomain") })
+                    @Html.EditorFor(model => model.AuditTrailLog.LogDomain, new { htmlAttributes = new { @class = profile.EditCSSEditorFor("LogDomain"), id = "AuditTrailLog_LogDomain" } })
+                    @* @Html.ValidationMessageFor(model => model.AuditTrailLog.LogDomain, "", new { @class = AppDefaults.CSSClassValidator }) *@
+                </div>
+                
+                <div id="Group_AuditTrailLog_LogEntity" class="@profile.EditCSSFor("LogEntity")">
+                    @Html.LabelFor(model => model.AuditTrailLog.LogEntity, new { @class = profile.EditCSSLabelFor("LogEntity") })
+                    @Html.EditorFor(model => model.AuditTrailLog.LogEntity, new { htmlAttributes = new { @class = profile.EditCSSEditorFor("LogEntity"), id = "AuditTrailLog_LogEntity" } })
+                    @* @Html.ValidationMessageFor(model => model.AuditTrailLog.LogEntity, "", new { @class = AppDefaults.CSSClassValidator }) *@
+                </div>
+
+                @Html.ZNewLine()
+                
+                <div id="Group_AuditTrailLog_LogOperation" class="@profile.EditCSSFor("LogOperation")">
+                    @Html.LabelFor(model => model.AuditTrailLog.LogOperation, new { @class = profile.EditCSSLabelFor("LogOperation") })
+                    @Html.EditorFor(model => model.AuditTrailLog.LogOperation, new { htmlAttributes = new { @class = profile.EditCSSEditorFor("LogOperation"), id = "AuditTrailLog_LogOperation" } })
+                    @* @Html.ValidationMessageFor(model => model.AuditTrailLog.LogOperation, "", new { @class = AppDefaults.CSSClassValidator }) *@
+                </div>
+                
+                <div id="Group_AuditTrailLog_LogId" class="@profile.EditCSSFor("LogId")">
+                    @Html.LabelFor(model => model.AuditTrailLog.LogId, new { @class = profile.EditCSSLabelFor("LogId") })
+                    @Html.EditorFor(model => model.AuditTrailLog.LogId, new { htmlAttributes = new { @class = profile.EditCSSEditorFor("LogId"), id = "AuditTrailLog_LogId" } })
+                    @* @Html.ValidationMessageFor(model => model.AuditTrailLog.LogId, "", new { @class = AppDefaults.CSSClassValidator }) *@
+                </div>
+                
+                @Html.ZNewLine()
+
+                <div id="Group_AuditTrailLog_LogEntityAfter" class="@profile.EditCSSFor("LogEntityAfter")">
+                    @Html.LabelFor(model => model.AuditTrailLog.LogEntityAfter, new { @class = profile.EditCSSLabelFor("LogEntityAfter") })
+                    @Html.EditorFor(model => model.AuditTrailLog.LogEntityAfter, new { htmlAttributes = new { @class = profile.EditCSSEditorFor("LogEntityAfter"), id = "AuditTrailLog_LogEntityAfter" } })
+                    @* @Html.ValidationMessageFor(model => model.AuditTrailLog.LogEntityAfter, "", new { @class = AppDefaults.CSSClassValidator }) *@
+                </div>
+                
+                @Html.ZNewLine()
+
+                <div id="Group_AuditTrailLog_LogEntityBefore" class="@profile.EditCSSFor("LogEntityBefore")">
+                    @Html.LabelFor(model => model.AuditTrailLog.LogEntityBefore, new { @class = profile.EditCSSLabelFor("LogEntityBefore") })
+                    @Html.EditorFor(model => model.AuditTrailLog.LogEntityBefore, new { htmlAttributes = new { @class = profile.EditCSSEditorFor("LogEntityBefore"), id = "AuditTrailLog_LogEntityBefore" } })
+                    @* @Html.ValidationMessageFor(model => model.AuditTrailLog.LogEntityBefore, "", new { @class = AppDefaults.CSSClassValidator }) *@
+                </div>
+
+            </div>);
+        })
+        .Render();
+    }
+</div>
+
+<script>
+    zSyncfusionItem("Item_AuditTrailLog");
+
+    $(function () {
+        try {
+            zSyncfusionItemReady("Item_AuditTrailLog");
+
+            var model = @Html.Raw(JsonConvert.SerializeObject(Model));
+            var profile = @Html.Raw(JsonConvert.SerializeObject(profile));
+            var controllerAction = model.ControllerAction == null ? "" : model.ControllerAction.toLowerCase();
+
+            // Collections (PK)
+
+            if (controllerAction != "create" || profile.IsIdentity) {
+                $("#Group_AuditTrailLog_Id").hide();
+            }
+
+            // Associations (FK)
+
+            zOnItemView(model, profile);
+        } catch (exception) {
+            zAlert(zExceptionMessage("@CSHTML", "function", exception));
+        }
+    });
+
+    function itemActive_Tab_AuditTrailLog(args) {
+        zTabDictionaryWrite("AuditTrailLog", args.model.selectedItemIndex);
+
+        try {
+        } catch (exception) {
+            zAlert(zExceptionMessage("@CSHTML", "itemActive_Tab_AuditTrailLog", exception));
+        }
+    }
+</script>

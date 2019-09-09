@@ -1,0 +1,143 @@
+[
+  {
+    "Text": "Home",
+    "Url": "/Home"
+  },
+  {
+    "Text": "MenuResources.System",
+    "SubMenus": [
+      {
+        "Text": "PresentationResources.Language",
+        "SubMenus": [
+          {
+            "Text": "English {en-US}",
+            "Url": "/Globalization/Culture?language=en&locale=US"
+          },
+          {
+            "Text": "Português {pt-BR}",
+            "Url": "/Globalization/Culture?language=pt&locale=BR"
+          }
+        ]
+      },
+      {
+        "Text": "PresentationResources.Tasks",
+        "SubMenus": [
+          {
+            "Text": "MenuResources.EasyLOB",
+            "SubMenus": [
+              {
+                "Text": "NorthwindPresentationResources.TaskNorthwindAPI",
+                "Url": "/NorthwindTasks/API"
+              },
+              {
+                "Text": "NorthwindPresentationResources.TaskNorthwindHelp",
+                "Url": "/NorthwindTasks/Help"
+              },
+              {
+                "Text": "NorthwindPresentationResources.TaskNorthwindStatus",
+                "Url": "/NorthwindTasks/Status"
+              }
+            ]
+          },
+          {
+            "Text": "PresentationResources.TaskAPI",
+            "Url": "/Tasks/API"
+          },
+          {
+            "Text": "PresentationResources.TaskCleanLocalStorage",
+            "Url": "/Tasks/CleanLocalStorage"
+          },
+          {
+            "Text": "PresentationResources.TaskCleanExportImport",
+            "Url": "/Tasks/CleanExportImport"
+          },
+          {
+            "Text": "PresentationResources.TaskExportProfile",
+            "Url": "/Tasks/ExportProfile"
+          },
+          {
+            "Text": "PresentationResources.TaskHelp",
+            "Url": "/Tasks/Help"
+          },
+          {
+            "Text": "NLog",
+            "Url": "/Tasks/NLog"
+          },
+          {
+            "Text": "PresentationResources.TaskStatus",
+            "Url": "/Tasks/Status"
+          },
+          {
+            "Text": "PresentationResources.TaskUrlDictionary",
+            "Url": "/Tasks/UrlDictionary"
+          }
+        ]
+      },
+      {
+        "Text": "AuthenticationResources.ChangePassword",
+        "Url": "/Authentication/ChangePassword"
+      },
+      {
+        "Text": "AuthenticationResources.LogOut",
+        "Url": "/Authentication/Logout"
+      }
+    ]
+  },
+  {
+    "Text": "MenuResources.Administration",
+    "SubMenus": [
+      {
+        "Text": "SecurityResources.Security",
+        "SubMenus": [
+          {
+            "Text": "SecurityResources.Authentication",
+            "SubMenus": [
+              {
+                "Text": "RoleResources.EntityPlural",
+                "Url": "/Role"
+              },
+              {
+                "Text": "UserResources.EntityPlural",
+                "Url": "/User"
+              },
+              {
+                "Text": "UserRoleResources.EntityPlural",
+                "Url": "/UserRole"
+              }
+            ]
+          },
+          {
+            "Text": "SecurityResources.Authorization",
+            "SubMenus": [
+              {
+                "Text": "ActivityResources.EntityPlural",
+                "Url": "/Activity"
+              },
+              {
+                "Text": "ActivityRoleResources.EntityPlural",
+                "Url": "/ActivityRole"
+              }
+            ]
+          },
+          {
+            "Text": "AuditTrailResources.AuditTrail",
+            "SubMenus": [
+              {
+                "Text": "AuditTrailConfigurationResources.EntityPlural",
+                "Url": "/AuditTrailConfiguration"
+              },
+              {
+                "Text": "AuditTrailLogResources.EntityPlural",
+                "Url": "/AuditTrailLog"
+              }
+            ]
+          },
+          {
+            "Text": "SecurityResources.TaskExportSecurity",
+            "Url": "/Tasks/ExportSecurity"
+          }
+        ]
+      }
+    ]
+  }
+]

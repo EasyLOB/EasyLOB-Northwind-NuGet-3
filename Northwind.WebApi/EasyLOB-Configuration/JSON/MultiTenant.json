@@ -1,0 +1,12 @@
+[
+  {
+    "Name": "Northwind",
+    "Description": "Northwind",
+    "Connections": [
+      {
+        "Name": "Northwind",
+        "ConnectionName": "Northwind"
+      }
+    ]
+  }
+]
