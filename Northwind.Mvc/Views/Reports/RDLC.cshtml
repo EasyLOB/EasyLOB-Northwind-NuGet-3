@@ -1,7 +1,7 @@
 @model ReportModelRDLC
 
 @{ 
-    string reportDirectory = ConfigurationHelper.AppSettings<string>("Report.RDLC.Directory");
+    string reportDirectory = ConfigurationHelper.AppSettings<string>("EasyLOB.Report.RDLC.Directory");
     string reportPath = Path.Combine(reportDirectory, Model.ReportDirectory, Model.ReportName + ".rdl");
 }
 
