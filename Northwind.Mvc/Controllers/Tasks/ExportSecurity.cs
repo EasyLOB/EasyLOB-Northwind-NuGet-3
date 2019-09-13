@@ -1,9 +1,7 @@
-using EasyLOB;
 using EasyLOB.Environment;
 using EasyLOB.Library;
-using EasyLOB.Mvc;
 using EasyLOB.Persistence;
-using EasyLOB.Security.Resources;
+using EasyLOB.Resources;
 using Syncfusion.XlsIO;
 using System;
 using System.Data;
@@ -23,7 +21,7 @@ namespace EasyLOB.Mvc
             {
                 if (IsTask("ExportSecurity", OperationResult))
                 {
-                    TaskViewModel viewModel = new TaskViewModel("Tasks", "ExportSecurity", SecurityResources.TaskExportSecurity);
+                    TaskViewModel viewModel = new TaskViewModel("Tasks", "ExportSecurity", EasyLOBPresentationResources.TaskExportSecurity);
 
                     return ZView("Task", viewModel);
                 }
