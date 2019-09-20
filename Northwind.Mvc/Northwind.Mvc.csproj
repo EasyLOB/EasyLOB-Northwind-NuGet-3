@@ -54,91 +54,91 @@
       <HintPath>..\packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.0\lib\net46\EasyLOB.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.0.1\lib\net46\EasyLOB.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Activity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.Security.3.0.0\lib\net46\EasyLOB.Activity.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.Security.3.0.1\lib\net46\EasyLOB.Activity.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Activity.Application, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.Security.3.0.0\lib\net46\EasyLOB.Activity.Application.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.Security.3.0.1\lib\net46\EasyLOB.Activity.Application.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Activity.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.Security.3.0.0\lib\net46\EasyLOB.Activity.Data.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.Security.3.0.1\lib\net46\EasyLOB.Activity.Data.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Activity.PersistenceEntityFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.Security.3.0.0\lib\net46\EasyLOB.Activity.PersistenceEntityFramework.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.Security.3.0.1\lib\net46\EasyLOB.Activity.PersistenceEntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Application, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.0\lib\net46\EasyLOB.Application.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.0.1\lib\net46\EasyLOB.Application.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.AuditTrail, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.AuditTrail.3.0.0\lib\net46\EasyLOB.AuditTrail.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.AuditTrail.3.0.1\lib\net46\EasyLOB.AuditTrail.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.AuditTrail.Application, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.AuditTrail.3.0.0\lib\net46\EasyLOB.AuditTrail.Application.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.AuditTrail.3.0.1\lib\net46\EasyLOB.AuditTrail.Application.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.AuditTrail.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.AuditTrail.3.0.0\lib\net46\EasyLOB.AuditTrail.Data.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.AuditTrail.3.0.1\lib\net46\EasyLOB.AuditTrail.Data.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.AuditTrail.PersistenceEntityFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.AuditTrail.3.0.0\lib\net46\EasyLOB.AuditTrail.PersistenceEntityFramework.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.AuditTrail.3.0.1\lib\net46\EasyLOB.AuditTrail.PersistenceEntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.AuditTrailManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.AuditTrail.3.0.0\lib\net46\EasyLOB.AuditTrailManager.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.AuditTrail.3.0.1\lib\net46\EasyLOB.AuditTrailManager.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.0\lib\net46\EasyLOB.Data.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.0.1\lib\net46\EasyLOB.Data.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.DIUnity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.0\lib\net46\EasyLOB.DIUnity.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.0.1\lib\net46\EasyLOB.DIUnity.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Environment, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.0\lib\net46\EasyLOB.Environment.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.0.1\lib\net46\EasyLOB.Environment.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Environment.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.Environment.Web.3.0.0\lib\net46\EasyLOB.Environment.Web.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.Environment.Web.3.0.1\lib\net46\EasyLOB.Environment.Web.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Extensions.Edm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.Extensions.Edm.3.0.0\lib\net46\EasyLOB.Extensions.Edm.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.Extensions.Edm.3.0.1\lib\net46\EasyLOB.Extensions.Edm.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Extensions.Ini, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.Extensions.Ini.3.0.0\lib\net46\EasyLOB.Extensions.Ini.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.Extensions.Ini.3.0.1\lib\net46\EasyLOB.Extensions.Ini.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Extensions.Mail, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.Extensions.Mail.3.0.0\lib\net46\EasyLOB.Extensions.Mail.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.Extensions.Mail.3.0.1\lib\net46\EasyLOB.Extensions.Mail.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Identity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.Security.3.0.0\lib\net46\EasyLOB.Identity.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.Security.3.0.1\lib\net46\EasyLOB.Identity.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Identity.Application, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.Security.3.0.0\lib\net46\EasyLOB.Identity.Application.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.Security.3.0.1\lib\net46\EasyLOB.Identity.Application.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Identity.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.Security.3.0.0\lib\net46\EasyLOB.Identity.Data.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.Security.3.0.1\lib\net46\EasyLOB.Identity.Data.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Identity.PersistenceEntityFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.Security.3.0.0\lib\net46\EasyLOB.Identity.PersistenceEntityFramework.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.Security.3.0.1\lib\net46\EasyLOB.Identity.PersistenceEntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.IdentityEntityFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.Security.3.0.0\lib\net46\EasyLOB.IdentityEntityFramework.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.Security.3.0.1\lib\net46\EasyLOB.IdentityEntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.0\lib\net46\EasyLOB.Library.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.0.1\lib\net46\EasyLOB.Library.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Log, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.0\lib\net46\EasyLOB.Log.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.0.1\lib\net46\EasyLOB.Log.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.LogNLog, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.0\lib\net46\EasyLOB.LogNLog.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.0.1\lib\net46\EasyLOB.LogNLog.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Persistence, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.0\lib\net46\EasyLOB.Persistence.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.0.1\lib\net46\EasyLOB.Persistence.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.PersistenceEntityFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.0\lib\net46\EasyLOB.PersistenceEntityFramework.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.0.1\lib\net46\EasyLOB.PersistenceEntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Security, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.Security.3.0.0\lib\net46\EasyLOB.Security.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.Security.3.0.1\lib\net46\EasyLOB.Security.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>

@@ -57,19 +57,12 @@ namespace EasyLOB
             SetupIdentity();
             SetupLog();
 
-            Container.RegisterType(typeof(IDIManager), typeof(DIManager), AppLifetimeManager,
-                new InjectionConstructor(Container));
-
             //Container.RegisterType(typeof(IEnvironmentManager), typeof(EnvironmentManagerDesktop), AppLifetimeManager);
             Container.RegisterType(typeof(IEnvironmentManager), typeof(EnvironmentManagerWeb), AppLifetimeManager);
 
-            ManagerHelper.Setup(Container.Resolve<IDIManager>(),
+            ManagerHelper.Setup(new DIManagerUnity(Container),
                 Container.Resolve<IEnvironmentManager>(),
                 Container.Resolve<ILogManager>());
-
-            //ManagerHelper.Setup(DependencyResolver.Current.GetService<IDIManager>(),
-            //    DependencyResolver.Current.GetService<IEnvironmentManager>(),
-            //    DependencyResolver.Current.GetService<ILogManager>());
         }
 
         #endregion Methods

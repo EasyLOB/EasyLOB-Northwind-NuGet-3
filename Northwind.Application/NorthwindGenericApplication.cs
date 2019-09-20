@@ -11,9 +11,8 @@ namespace Northwind.Application
     {
         #region Methods
 
-        public NorthwindGenericApplication(INorthwindUnitOfWork unitOfWork, IDIManager diManager)
-            : base(unitOfWork, diManager)
-            
+        public NorthwindGenericApplication(INorthwindUnitOfWork unitOfWork)
+            : base(unitOfWork)            
         {
         }
 
