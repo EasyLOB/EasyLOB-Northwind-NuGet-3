@@ -422,10 +422,10 @@
     <Compile Include="EasyLOB\AppHelper.cs" />
     <Compile Include="EasyLOB\AuditTrail\AppDIUnityHelperAuditTrail.cs" />
     <Compile Include="EasyLOB\AuditTrail\AuditTrailViewAutoMapper.cs" />
-    <Compile Include="EasyLOB\DIUnity\AppDIUnityHelper.cs" />
-    <Compile Include="EasyLOB\DIUnity\AppDIUnityHelperEasyLOB.cs" />
-    <Compile Include="EasyLOB\DIUnity\AppDIUnityHelperExtensions.cs" />
-    <Compile Include="EasyLOB\DIUnity\AppDIUnityHelperLog.cs" />
+    <Compile Include="EasyLOB\DI\AppDIUnityHelper.cs" />
+    <Compile Include="EasyLOB\EasyLOB\AppDIUnityHelperEasyLOB.cs" />
+    <Compile Include="EasyLOB\EasyLOB\AppDIUnityHelperExtensions.cs" />
+    <Compile Include="EasyLOB\EasyLOB\AppDIUnityHelperLog.cs" />
     <Compile Include="EasyLOB\Filters\EasyLOBMultiTenantAttribute.cs" />
     <Compile Include="EasyLOB\Filters\EasyLOBProfileAttribute.cs" />
     <Compile Include="EasyLOB\Identity\AppDIUnityHelperIdentity.cs" />
