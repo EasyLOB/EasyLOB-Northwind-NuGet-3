@@ -72,13 +72,6 @@
             var profile = @Html.Raw(JsonConvert.SerializeObject(profile));
             var controllerAction = model.ControllerAction == null ? "" : model.ControllerAction.toLowerCase();
 
-            // Collections (PK)
-            if (controllerAction != "create" && zContains(profile.EditCollections, "EmployeeTerritories")) {
-                zUrlDictionaryWrite("EmployeeTerritory", "@Context.Request.Url.AbsoluteUri");
-                var ajaxUrl = "@(Html.Raw(Url.Action("Search", "EmployeeTerritory", new { MasterControllerAction = Model.ControllerAction, MasterEntity = "Territory", MasterKey = Model.Territory.TerritoryId })))";
-                zAjaxLoadSync("Ajax_Territory_EmployeeTerritories", ajaxUrl);
-            }
-
             if (controllerAction != "create" || profile.IsIdentity) {
                 $("#Group_Territory_TerritoryId").hide();
             }
@@ -89,6 +82,13 @@
                     $("#Territory_RegionId").val(model.MasterKey);
                     $("#Group_Territory_RegionId").hide();
                     break;
+            }
+
+            // Collections (PK)
+            if (controllerAction != "create" && zContains(profile.EditCollections, "EmployeeTerritories")) {
+                zUrlDictionaryWrite("EmployeeTerritory", "@Context.Request.Url.AbsoluteUri");
+                var ajaxUrl = "@(Html.Raw(Url.Action("Search", "EmployeeTerritory", new { MasterControllerAction = Model.ControllerAction, MasterEntity = "Territory", MasterKey = Model.Territory.TerritoryId })))";
+                zAjaxLoadSync("Ajax_Territory_EmployeeTerritories", ajaxUrl);
             }
 
             zOnItemView(model, profile);        

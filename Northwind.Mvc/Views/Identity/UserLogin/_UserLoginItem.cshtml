@@ -69,8 +69,6 @@
             var profile = @Html.Raw(JsonConvert.SerializeObject(profile));
             var controllerAction = model.ControllerAction == null ? "" : model.ControllerAction.toLowerCase();
 
-            // Collections (PK)
-
             if (controllerAction != "create" || profile.IsIdentity) {
                 $("#Group_UserLogin_LoginProvider").hide();
                 $("#Group_UserLogin_ProviderKey").hide();
@@ -84,6 +82,8 @@
                     $("#Group_UserClaim_UserId").hide();
                     break;
             }
+
+            // Collections (PK)
 
             zOnItemView(model, profile);
         } catch (exception) {

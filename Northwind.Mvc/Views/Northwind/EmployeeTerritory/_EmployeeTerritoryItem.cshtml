@@ -72,8 +72,6 @@
             var profile = @Html.Raw(JsonConvert.SerializeObject(profile));
             var controllerAction = model.ControllerAction == null ? "" : model.ControllerAction.toLowerCase();
 
-            // Collections (PK)
-
             if (controllerAction != "create" || profile.IsIdentity) {
                 $("#Group_EmployeeTerritory_EmployeeId").hide();
                 $("#Group_EmployeeTerritory_TerritoryId").hide();
@@ -90,6 +88,8 @@
                     $("#Group_EmployeeTerritory_TerritoryId").hide();
                     break;
             }
+
+            // Collections (PK)
 
             zOnItemView(model, profile);        
         } catch (exception) {

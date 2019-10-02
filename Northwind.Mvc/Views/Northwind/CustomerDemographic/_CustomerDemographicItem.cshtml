@@ -57,18 +57,18 @@
             var profile = @Html.Raw(JsonConvert.SerializeObject(profile));
             var controllerAction = model.ControllerAction == null ? "" : model.ControllerAction.toLowerCase();
 
+            if (controllerAction != "create" || profile.IsIdentity) {
+                $("#Group_CustomerDemographic_CustomerTypeId").hide();
+            }
+
+            // Associations (FK)
+
             // Collections (PK)
             if (controllerAction != "create" && zContains(profile.EditCollections, "CustomerCustomerDemos")) {
                 zUrlDictionaryWrite("CustomerCustomerDemo", "@Context.Request.Url.AbsoluteUri");
                 var ajaxUrl = "@(Html.Raw(Url.Action("Search", "CustomerCustomerDemo", new { MasterControllerAction = Model.ControllerAction, MasterEntity = "CustomerDemographic", MasterKey = Model.CustomerDemographic.CustomerTypeId })))";
                 zAjaxLoadSync("Ajax_CustomerDemographic_CustomerCustomerDemos", ajaxUrl);
             }
-
-            if (controllerAction != "create" || profile.IsIdentity) {
-                $("#Group_CustomerDemographic_CustomerTypeId").hide();
-            }
-
-            // Associations (FK)
 
             zOnItemView(model, profile);        
         } catch (exception) {

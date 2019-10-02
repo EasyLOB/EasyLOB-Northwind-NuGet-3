@@ -176,6 +176,18 @@
             var profile = @Html.Raw(JsonConvert.SerializeObject(profile));
             var controllerAction = model.ControllerAction == null ? "" : model.ControllerAction.toLowerCase();
 
+            if (controllerAction != "create" || profile.IsIdentity) {
+                $("#Group_Employee_EmployeeId").hide();
+            }
+
+            // Associations (FK)
+            switch (model.MasterEntity) {
+                case "Employee":
+                    $("#Employee_ReportsTo").val(model.MasterKey);
+                    $("#Group_Employee_ReportsTo").hide();
+                    break;
+            }
+
             // Collections (PK)
             if (controllerAction != "create" && zContains(profile.EditCollections, "Employees")) {
                 zUrlDictionaryWrite("Employee", "@Context.Request.Url.AbsoluteUri");
@@ -191,18 +203,6 @@
                 zUrlDictionaryWrite("Order", "@Context.Request.Url.AbsoluteUri");
                 var ajaxUrl = "@(Html.Raw(Url.Action("Search", "Order", new { MasterControllerAction = Model.ControllerAction, MasterEntity = "Employee", MasterKey = Model.Employee.EmployeeId })))";
                 zAjaxLoadSync("Ajax_Employee_Orders", ajaxUrl);
-            }
-
-            if (controllerAction != "create" || profile.IsIdentity) {
-                $("#Group_Employee_EmployeeId").hide();
-            }
-
-            // Associations (FK)
-            switch (model.MasterEntity) {
-                case "Employee":
-                    $("#Employee_ReportsTo").val(model.MasterKey);
-                    $("#Group_Employee_ReportsTo").hide();
-                    break;
             }
 
             zOnItemView(model, profile);        

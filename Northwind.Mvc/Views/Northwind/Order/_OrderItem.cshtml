@@ -159,13 +159,6 @@
             var profile = @Html.Raw(JsonConvert.SerializeObject(profile));
             var controllerAction = model.ControllerAction == null ? "" : model.ControllerAction.toLowerCase();
 
-            // Collections (PK)
-            if (controllerAction != "create" && zContains(profile.EditCollections, "OrderDetails")) {
-                zUrlDictionaryWrite("OrderDetail", "@Context.Request.Url.AbsoluteUri");
-                var ajaxUrl = "@(Html.Raw(Url.Action("Search", "OrderDetail", new { MasterControllerAction = Model.ControllerAction, MasterEntity = "Order", MasterKey = Model.Order.OrderId })))";
-                zAjaxLoadSync("Ajax_Order_OrderDetails", ajaxUrl);
-            }
-
             if (controllerAction != "create" || profile.IsIdentity) {
                 $("#Group_Order_OrderId").hide();
             }
@@ -184,6 +177,13 @@
                     $("#Order_ShipVia").val(model.MasterKey);
                     $("#Group_Order_ShipVia").hide();
                     break;
+            }
+
+            // Collections (PK)
+            if (controllerAction != "create" && zContains(profile.EditCollections, "OrderDetails")) {
+                zUrlDictionaryWrite("OrderDetail", "@Context.Request.Url.AbsoluteUri");
+                var ajaxUrl = "@(Html.Raw(Url.Action("Search", "OrderDetail", new { MasterControllerAction = Model.ControllerAction, MasterEntity = "Order", MasterKey = Model.Order.OrderId })))";
+                zAjaxLoadSync("Ajax_Order_OrderDetails", ajaxUrl);
             }
 
             zOnItemView(model, profile);        

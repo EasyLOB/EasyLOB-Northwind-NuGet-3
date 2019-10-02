@@ -127,6 +127,12 @@
             var profile = @Html.Raw(JsonConvert.SerializeObject(profile)); // !?!
             var controllerAction = model.ControllerAction == null ? "" : model.ControllerAction.toLowerCase();
 
+            if (controllerAction != "create" || profile.IsIdentity) {
+                $("#Group_User_Id").hide();
+            }
+
+            // Associations (FK)
+
             // Collections (PK)
             if (controllerAction != "create" && zContains(profile.EditCollections, "UserClaims")) {
                 zUrlDictionaryWrite("UserClaim", "@Context.Request.Url.AbsoluteUri");
@@ -143,12 +149,6 @@
                 var ajaxUrl = "@(Html.Raw(Url.Action("Search", "UserRole", new { MasterControllerAction = Model.ControllerAction, MasterEntity = "User", MasterKey = Model.User.Id })))";
                 zAjaxLoadSync("Ajax_User_UserRoles", ajaxUrl);
             }
-
-            if (controllerAction != "create" || profile.IsIdentity) {
-                $("#Group_User_Id").hide();
-            }
-
-            // Associations (FK)
 
             zOnItemView(model, profile);
 

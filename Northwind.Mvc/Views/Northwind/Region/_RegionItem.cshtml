@@ -57,18 +57,18 @@
             var profile = @Html.Raw(JsonConvert.SerializeObject(profile));
             var controllerAction = model.ControllerAction == null ? "" : model.ControllerAction.toLowerCase();
 
+            if (controllerAction != "create" || profile.IsIdentity) {
+                $("#Group_Region_RegionId").hide();
+            }
+
+            // Associations (FK)
+
             // Collections (PK)
             if (controllerAction != "create" && zContains(profile.EditCollections, "Territories")) {
                 zUrlDictionaryWrite("Territory", "@Context.Request.Url.AbsoluteUri");
                 var ajaxUrl = "@(Html.Raw(Url.Action("Search", "Territory", new { MasterControllerAction = Model.ControllerAction, MasterEntity = "Region", MasterKey = Model.Region.RegionId })))";
                 zAjaxLoadSync("Ajax_Region_Territories", ajaxUrl);
             }
-
-            if (controllerAction != "create" || profile.IsIdentity) {
-                $("#Group_Region_RegionId").hide();
-            }
-
-            // Associations (FK)
 
             zOnItemView(model, profile);        
         } catch (exception) {

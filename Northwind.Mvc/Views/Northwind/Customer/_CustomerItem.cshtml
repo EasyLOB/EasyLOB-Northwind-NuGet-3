@@ -114,6 +114,12 @@
             var profile = @Html.Raw(JsonConvert.SerializeObject(profile));
             var controllerAction = model.ControllerAction == null ? "" : model.ControllerAction.toLowerCase();
 
+            if (controllerAction != "create" || profile.IsIdentity) {
+                $("#Group_Customer_CustomerId").hide();
+            }
+
+            // Associations (FK)
+
             // Collections (PK)
             if (controllerAction != "create" && zContains(profile.EditCollections, "CustomerCustomerDemos")) {
                 zUrlDictionaryWrite("CustomerCustomerDemo", "@Context.Request.Url.AbsoluteUri");
@@ -125,12 +131,6 @@
                 var ajaxUrl = "@(Html.Raw(Url.Action("Search", "Order", new { MasterControllerAction = Model.ControllerAction, MasterEntity = "Customer", MasterKey = Model.Customer.CustomerId })))";
                 zAjaxLoadSync("Ajax_Customer_Orders", ajaxUrl);
             }
-
-            if (controllerAction != "create" || profile.IsIdentity) {
-                $("#Group_Customer_CustomerId").hide();
-            }
-
-            // Associations (FK)
 
             zOnItemView(model, profile);        
         } catch (exception) {
