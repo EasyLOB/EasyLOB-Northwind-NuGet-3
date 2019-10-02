@@ -92,9 +92,9 @@ namespace EasyLOB.Identity.Mvc
 
         // GET: User/Create
         [HttpGet]
-        public ActionResult Create()
+        public ActionResult Create(string masterEntity = null, string masterKey = null)
         {
-            UserItemModel userItemModel = new UserItemModel(ActivityOperations, "Create");
+            UserItemModel userItemModel = new UserItemModel(ActivityOperations, "Create", masterEntity, masterKey);
 
             try
             {
@@ -178,9 +178,9 @@ namespace EasyLOB.Identity.Mvc
 
         // GET: User/Update/1
         [HttpGet]
-        public ActionResult Update(string id)
+        public ActionResult Update(string id, string masterEntity = null, string masterKey = null)
         {
-            UserItemModel userItemModel = new UserItemModel(ActivityOperations, "Update");
+            UserItemModel userItemModel = new UserItemModel(ActivityOperations, "Update", masterEntity, masterKey);
             
             try
             {
@@ -242,9 +242,9 @@ namespace EasyLOB.Identity.Mvc
 
         // GET: User/Delete/1
         [HttpGet]
-        public ActionResult Delete(string id)
+        public ActionResult Delete(string id, string masterEntity = null, string masterKey = null)
         {
-            UserItemModel userItemModel = new UserItemModel(ActivityOperations, "Delete");
+            UserItemModel userItemModel = new UserItemModel(ActivityOperations, "Delete", masterEntity, masterKey);
             
             try
             {

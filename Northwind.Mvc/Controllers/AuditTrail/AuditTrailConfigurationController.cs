@@ -92,9 +92,9 @@ namespace EasyLOB.AuditTrail.Mvc
 
         // GET: AuditTrailConfiguration/Create
         [HttpGet]
-        public ActionResult Create()
+        public ActionResult Create(string masterEntity = null, string masterKey = null)
         {
-            AuditTrailConfigurationItemModel auditTrailConfigurationItemModel = new AuditTrailConfigurationItemModel(ActivityOperations, "Create");
+            AuditTrailConfigurationItemModel auditTrailConfigurationItemModel = new AuditTrailConfigurationItemModel(ActivityOperations, "Create", masterEntity, masterKey);
 
             try
             {
@@ -178,9 +178,9 @@ namespace EasyLOB.AuditTrail.Mvc
 
         // GET: AuditTrailConfiguration/Update/1
         [HttpGet]
-        public ActionResult Update(int id)
+        public ActionResult Update(int id, string masterEntity = null, string masterKey = null)
         {
-            AuditTrailConfigurationItemModel auditTrailConfigurationItemModel = new AuditTrailConfigurationItemModel(ActivityOperations, "Update");
+            AuditTrailConfigurationItemModel auditTrailConfigurationItemModel = new AuditTrailConfigurationItemModel(ActivityOperations, "Update", masterEntity, masterKey);
             
             try
             {
@@ -242,9 +242,9 @@ namespace EasyLOB.AuditTrail.Mvc
 
         // GET: AuditTrailConfiguration/Delete/1
         [HttpGet]
-        public ActionResult Delete(int id)
+        public ActionResult Delete(int id, string masterEntity = null, string masterKey = null)
         {
-            AuditTrailConfigurationItemModel auditTrailConfigurationItemModel = new AuditTrailConfigurationItemModel(ActivityOperations, "Delete");
+            AuditTrailConfigurationItemModel auditTrailConfigurationItemModel = new AuditTrailConfigurationItemModel(ActivityOperations, "Delete", masterEntity, masterKey);
             
             try
             {
