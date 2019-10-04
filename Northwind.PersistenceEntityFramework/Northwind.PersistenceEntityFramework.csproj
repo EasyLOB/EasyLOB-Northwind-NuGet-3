@@ -42,9 +42,6 @@
     <Reference Include="EasyLOB.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\EasyLOB.3.0.1\lib\net46\EasyLOB.Data.dll</HintPath>
     </Reference>
-    <Reference Include="EasyLOB.DIUnity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.1\lib\net46\EasyLOB.DIUnity.dll</HintPath>
-    </Reference>
     <Reference Include="EasyLOB.Environment, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\EasyLOB.3.0.1\lib\net46\EasyLOB.Environment.dll</HintPath>
     </Reference>
