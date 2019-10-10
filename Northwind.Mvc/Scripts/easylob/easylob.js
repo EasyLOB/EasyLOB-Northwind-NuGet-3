@@ -444,7 +444,7 @@ function zAjaxLoadSync(id, ajaxUrl) {
 
 function zAjaxLoadComplete(responseText, textStatus, jqXHR, id) {
     try {
-        if (jqXHR) { // @aJAX.ZImageLink
+        if (jqXHR) { // @Ajax.ZImageLink
             var response = zParseJSON(jqXHR.responseText);
             if (response && response.Url) {
                 window.location.replace(response.Url);
