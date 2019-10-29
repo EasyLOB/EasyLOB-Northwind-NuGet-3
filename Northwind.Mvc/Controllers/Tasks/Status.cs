@@ -1,3 +1,9 @@
+using EasyLOB.Activity;
+using EasyLOB.AuditTrail;
+using EasyLOB.Environment;
+using EasyLOB.Extensions.Edm;
+using EasyLOB.Identity;
+using EasyLOB.Resources;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -25,7 +31,6 @@ using System.Web.Mvc;
 // __DynamicModule_Microsoft.VisualStudio.Web.PageInspector.Runtime.Tracing.PageInspectorHttpModule, Microsoft.VisualStudio.Web.PageInspector.Runtime, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a_a128e1f0-126c-4da1-a89b-a22c5f8b4cd2
 // __DynamicModule_System.Web.WebPages.WebPageHttpModule, System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35_3f8e3a11-24c3-4d3e-bd8c-ea9f6661206c
 // __DynamicModule_System.Web.Optimization.BundleModule, System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35_df7ee17b-c173-4e72-8039-f59b50ed6d48
-// __DynamicModule_Unity.Mvc5.RequestLifetimeHttpModule, Unity.Mvc5, Version=1.2.3.0, Culture=neutral, PublicKeyToken=43da31bc42a85347_0a7ba3c5-70f0-4b50-996f-566a904d4459
 
 namespace EasyLOB.Mvc
 {
