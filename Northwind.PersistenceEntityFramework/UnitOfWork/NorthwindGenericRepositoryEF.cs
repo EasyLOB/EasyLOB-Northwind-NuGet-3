@@ -9,7 +9,7 @@ namespace Northwind.Persistence
     {
         #region Methods
 
-        public NorthwindGenericRepositoryEF(IUnitOfWork unitOfWork)
+        public NorthwindGenericRepositoryEF(INorthwindUnitOfWork unitOfWork)
             : base(unitOfWork)
         {
             Context = (unitOfWork as NorthwindUnitOfWorkEF).Context;

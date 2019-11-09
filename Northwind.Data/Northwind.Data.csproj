@@ -34,31 +34,31 @@
       <HintPath>..\packages\AutoMapper.7.0.1\lib\net45\AutoMapper.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.1\lib\net46\EasyLOB.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.0.2\lib\net46\EasyLOB.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Application, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.1\lib\net46\EasyLOB.Application.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.0.2\lib\net46\EasyLOB.Application.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.1\lib\net46\EasyLOB.Data.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.0.2\lib\net46\EasyLOB.Data.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Environment, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.1\lib\net46\EasyLOB.Environment.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.0.2\lib\net46\EasyLOB.Environment.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.1\lib\net46\EasyLOB.Library.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.0.2\lib\net46\EasyLOB.Library.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Log, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.1\lib\net46\EasyLOB.Log.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.0.2\lib\net46\EasyLOB.Log.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.LogNLog, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.1\lib\net46\EasyLOB.LogNLog.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.0.2\lib\net46\EasyLOB.LogNLog.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Persistence, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.1\lib\net46\EasyLOB.Persistence.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.0.2\lib\net46\EasyLOB.Persistence.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.PersistenceEntityFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.1\lib\net46\EasyLOB.PersistenceEntityFramework.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.0.2\lib\net46\EasyLOB.PersistenceEntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
