@@ -18,9 +18,10 @@ namespace EasyLOB.Mvc
 
         #region Methods
 
-        public BaseMvcController()
+        public BaseMvcController(IAuthorizationManager authorizationManager)
+            : base(authorizationManager.AuthenticationManager)
         {
-            AuthorizationManager = DependencyResolver.Current.GetService<IAuthorizationManager>();
+            AuthorizationManager = authorizationManager;
         }
 
         [HttpGet]

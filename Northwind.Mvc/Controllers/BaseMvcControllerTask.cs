@@ -10,7 +10,8 @@
 
         #region Methods
 
-        public BaseMvcControllerTask()
+        public BaseMvcControllerTask(IAuthorizationManager authorizationManager)
+            : base(authorizationManager)
         {
             OperationResult = new ZOperationResult();
         }

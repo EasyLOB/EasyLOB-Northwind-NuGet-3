@@ -11,10 +11,9 @@ namespace EasyLOB.Mvc
     {
         #region Methods
 
-        public BaseMvc()
+        public BaseMvc(IAuthenticationManager authenticationManager)
         {
-            IAuthenticationManager AuthenticationManager = DependencyResolver.Current.GetService<IAuthenticationManager>();
-            ViewBag.Menu = MenuHelper.Menu(AuthenticationManager); // !?!
+            ViewBag.Menu = MenuHelper.Menu(authenticationManager);
         }
 
         protected virtual bool IsValid(ZOperationResult operationResult, string entity)

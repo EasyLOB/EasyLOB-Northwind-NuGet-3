@@ -18,6 +18,7 @@ namespace EasyLOB.Identity.Mvc
         #region Methods
 
         public UserClaimController(IIdentityGenericApplication<UserClaim> application)
+            : base(application.AuthorizationManager)
         {
             Application = application;            
         }

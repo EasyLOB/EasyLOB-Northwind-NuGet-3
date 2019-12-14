@@ -7,6 +7,11 @@ namespace EasyLOB.Mvc
     {
         #region Methods
 
+        public GlobalizationController(IAuthorizationManager authorizationManager)
+            : base(authorizationManager.AuthenticationManager)
+        {
+        }
+
         public void Culture(string language, string locale)
         {
             // en-US

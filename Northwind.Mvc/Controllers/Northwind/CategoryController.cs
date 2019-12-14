@@ -18,6 +18,7 @@ namespace Northwind.Mvc
         #region Methods
 
         public CategoryController(INorthwindGenericApplication<Category> application)
+    : base(application.AuthorizationManager)
         {
             Application = application;            
         }

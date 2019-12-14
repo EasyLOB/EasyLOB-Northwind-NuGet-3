@@ -4,9 +4,10 @@
     {
         #region Methods
 
-        //public BaseMvcControllerReport()
-        //{
-        //}
+        public BaseMvcControllerReport(IAuthorizationManager authorizationManager)
+            : base(authorizationManager)
+        {
+        }
 
         #endregion Methods
 

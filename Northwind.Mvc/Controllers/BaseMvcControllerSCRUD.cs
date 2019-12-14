@@ -36,6 +36,11 @@ namespace EasyLOB.Mvc
 
         #region Methods
 
+        public BaseMvcControllerSCRUD(IAuthorizationManager authorizationManager)
+            : base(authorizationManager)
+        {
+        }
+
         protected virtual void Create2Update(ZOperationResult operationResult)
         {
             //operationResult.InformationMessage = EasyLOB.Resources.PresentationResources.CreateToUpdate;

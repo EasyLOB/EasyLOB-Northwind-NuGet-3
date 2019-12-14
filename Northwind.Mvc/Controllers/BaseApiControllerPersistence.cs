@@ -15,5 +15,14 @@
         protected IGenericRepository<TEntity> Repository { get { return UnitOfWork.GetRepository<TEntity>(); } }
 
         #endregion Properties
+
+        #region Methods
+
+        public BaseApiControllerPersistence(IAuthorizationManager authorizationManager)
+            : base(authorizationManager)
+        {
+        }
+
+        #endregion Methods
     }
 }

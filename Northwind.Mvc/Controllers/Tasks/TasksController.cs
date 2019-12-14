@@ -1,6 +1,3 @@
-using EasyLOB.Application;
-using EasyLOB.Data;
-
 namespace EasyLOB.Mvc
 {
     public partial class TasksController : BaseMvcControllerTask
@@ -13,7 +10,9 @@ namespace EasyLOB.Mvc
 
         #region Methods
 
-        public TasksController(IEasyLOBApplication application)
+        public TasksController(IEasyLOBApplication application,
+            IAuthorizationManager authorizationManager)
+            : base(authorizationManager)
         {
             Application = application;
         }

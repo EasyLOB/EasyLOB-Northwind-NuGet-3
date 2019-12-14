@@ -18,6 +18,7 @@ namespace Northwind.Mvc
         #region Methods
 
         public CustomerController(INorthwindGenericApplication<Customer> application)
+    : base(application.AuthorizationManager)
         {
             Application = application;            
         }

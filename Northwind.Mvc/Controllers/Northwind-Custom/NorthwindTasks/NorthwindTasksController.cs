@@ -14,7 +14,9 @@ namespace Northwind.Mvc
 
         #region Methods
 
-        public NorthwindTasksController(INorthwindUnitOfWork unitOfWork)
+        public NorthwindTasksController(INorthwindUnitOfWork unitOfWork,
+            IAuthorizationManager authorizationManager)
+            : base(authorizationManager)
         {
             UnitOfWork = unitOfWork;
         }

@@ -18,6 +18,7 @@ namespace EasyLOB.Activity.Mvc
         #region Methods
 
         public ActivityController(IActivityGenericApplication<EasyLOB.Activity.Data.Activity> application) // !?!
+            : base(application.AuthorizationManager)
         {
             Application = application;            
         }

@@ -18,6 +18,7 @@ namespace EasyLOB.AuditTrail.Mvc
         #region Methods
 
         public AuditTrailConfigurationController(IAuditTrailGenericApplication<AuditTrailConfiguration> application)
+            : base(application.AuthorizationManager)
         {
             Application = application;            
         }

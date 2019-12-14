@@ -13,5 +13,14 @@ namespace EasyLOB.WebApi
         protected IGenericApplication<TEntity> Application { get; set; }
 
         #endregion Properties
+
+        #region Methods
+
+        public BaseApiControllerApplication(IAuthorizationManager authorizationManager)
+            : base(authorizationManager)
+        {
+        }
+
+        #endregion Methods
     }
 }

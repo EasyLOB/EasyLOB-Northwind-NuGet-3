@@ -39,9 +39,9 @@ namespace EasyLOB.WebApi
 
         #region Methods
 
-        public BaseApiController()
+        public BaseApiController(IAuthorizationManager authorizationManager)
         {
-            AuthorizationManager = DependencyResolver.Current.GetService<IAuthorizationManager>();
+            AuthorizationManager = authorizationManager;
         }
 
         #endregion Methods

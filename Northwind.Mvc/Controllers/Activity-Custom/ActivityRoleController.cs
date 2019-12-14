@@ -18,6 +18,7 @@ namespace EasyLOB.Activity.Mvc
         #region Methods
 
         public ActivityRoleController(IActivityGenericApplicationDTO<ActivityRoleDTO, ActivityRole> application)
+            : base(application.AuthorizationManager)
         {
             Application = application;            
         }

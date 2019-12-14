@@ -18,6 +18,7 @@ namespace Northwind.Mvc
         #region Methods
 
         public EmployeeTerritoryController(INorthwindGenericApplication<EmployeeTerritory> application)
+    : base(application.AuthorizationManager)
         {
             Application = application;            
         }

@@ -19,6 +19,15 @@ namespace EasyLOB.Mvc
 
         #endregion Properties
 
+        #region Methods
+
+        public BaseMvcControllerSCRUDApplicationDTO(IAuthorizationManager authorizationManager)
+            : base(authorizationManager)
+        {
+        }
+
+        #endregion Methods
+
         #region Methods Syncfusion
 
         protected void ExportToExcel(string gridModel, string fileName)
