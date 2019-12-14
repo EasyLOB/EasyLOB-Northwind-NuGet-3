@@ -111,7 +111,7 @@ namespace Northwind.Persistence
 
             #region Associations (FK)
 
-            this.HasOptional(x => x.Employee_Employee)
+            this.HasOptional(x => x.EmployeeEmployee)
                 .WithMany(x => x.Employees)
                 .HasForeignKey(x => x.ReportsTo);
 

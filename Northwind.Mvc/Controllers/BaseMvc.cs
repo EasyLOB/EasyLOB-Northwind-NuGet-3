@@ -13,8 +13,7 @@ namespace EasyLOB.Mvc
 
         public BaseMvc()
         {
-            IAuthenticationManager AuthenticationManager =
-                DependencyResolver.Current.GetService<IAuthenticationManager>();
+            IAuthenticationManager AuthenticationManager = DependencyResolver.Current.GetService<IAuthenticationManager>();
             ViewBag.Menu = MenuHelper.Menu(AuthenticationManager); // !?!
         }
 

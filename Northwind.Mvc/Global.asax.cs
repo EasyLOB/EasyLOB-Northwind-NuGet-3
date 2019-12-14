@@ -25,9 +25,6 @@ namespace Northwind.Mvc
             // Syncfusion
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("");
 
-            // Setup
-            AppHelper.Setup();
-
             AreaRegistration.RegisterAllAreas();
 
             // Dependency Injection

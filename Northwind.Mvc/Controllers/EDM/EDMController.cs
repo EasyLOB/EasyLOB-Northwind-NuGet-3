@@ -7,15 +7,29 @@ namespace EasyLOB.Mvc
     [Authorize]
     public class EDMController : Controller
     {
+        #region Properties
+
+        public IEdmManager EDMManager;
+
+        #endregion Properties
+
+        #region Methods
+
+        public EDMController(IEdmManager edmManager)
+        {
+            EDMManager = edmManager;
+        }
+
         [HttpGet]
         public ActionResult Read(string entityName, int id, string acronym)
-        {
-            IEdmManager edmManager = DependencyResolver.Current.GetService<IEdmManager>();
+        {            
             ZFileTypes fileType = LibraryHelper.GetFileType(acronym);
-            byte[] file = edmManager.ReadFile(entityName, id, fileType);
+            byte[] file = EDMManager.ReadFile(entityName, id, fileType);
             string extension = LibraryHelper.GetFileExtension(fileType);
 
             return File(file, LibraryHelper.GetContentType(fileType), entityName + "-" + id.ToString().Trim() + extension);
         }
+
+        #endregion Methods
     }
 }

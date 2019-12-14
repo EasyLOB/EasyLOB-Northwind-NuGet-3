@@ -45,24 +45,24 @@ namespace EasyLOB.Mvc
             StringBuilder result = new StringBuilder();
 
             result.Append("<br /><b>AuditTrail</b>");
-            result.Append("<br />:: IAuditTrailUnitOfWork: " + (ManagerHelper.DIManager.GetService<IAuditTrailUnitOfWork>()).GetType().ToString());
-            result.Append("<br />:: IAuditTrailManager: " + (ManagerHelper.DIManager.GetService<IAuditTrailManager>()).GetType().ToString());
+            result.Append("<br />:: IAuditTrailUnitOfWork: " + (DependencyResolver.Current.GetService<IAuditTrailUnitOfWork>()).GetType().ToString());
+            result.Append("<br />:: IAuditTrailManager: " + (DependencyResolver.Current.GetService<IAuditTrailManager>()).GetType().ToString());
 
             result.Append("<br />");
             result.Append("<br /><b>Directory</b>");
-            result.Append("<br />:: Configuration: " + ManagerHelper.EnvironmentManager.ApplicationPath(ConfigurationHelper.AppSettings<string>("EasyLOB.Directory.Configuration")));
-            result.Append("<br />:: Export: " + ManagerHelper.EnvironmentManager.ApplicationPath(ConfigurationHelper.AppSettings<string>("EasyLOB.Directory.Export")));
-            result.Append("<br />:: Import: " + ManagerHelper.EnvironmentManager.ApplicationPath(ConfigurationHelper.AppSettings<string>("EasyLOB.Directory.Import")));
-            result.Append("<br />:: Template: " + ManagerHelper.EnvironmentManager.ApplicationPath(ConfigurationHelper.AppSettings<string>("EasyLOB.Directory.Template")));
+            result.Append("<br />:: Configuration: " + DIHelper.EnvironmentManager.ApplicationPath(ConfigurationHelper.AppSettings<string>("EasyLOB.Directory.Configuration")));
+            result.Append("<br />:: Export: " + DIHelper.EnvironmentManager.ApplicationPath(ConfigurationHelper.AppSettings<string>("EasyLOB.Directory.Export")));
+            result.Append("<br />:: Import: " + DIHelper.EnvironmentManager.ApplicationPath(ConfigurationHelper.AppSettings<string>("EasyLOB.Directory.Import")));
+            result.Append("<br />:: Template: " + DIHelper.EnvironmentManager.ApplicationPath(ConfigurationHelper.AppSettings<string>("EasyLOB.Directory.Template")));
 
             result.Append("<br />");
             result.Append("<br /><b>EDM</b>");
-            result.Append("<br />:: IEdmManager: " + (ManagerHelper.DIManager.GetService<IEdmManager>()).GetType().ToString());
+            result.Append("<br />:: IEdmManager: " + (DependencyResolver.Current.GetService<IEdmManager>()).GetType().ToString());
             result.Append("<br />:: Directory: " + ConfigurationHelper.AppSettings<string>("EasyLOB.EDM.FileSystemDirectory"));
 
             result.Append("<br />");
             result.Append("<br /><b>Log</b>");
-            result.Append("<br />:: ILogManager: " + (ManagerHelper.DIManager.GetService<ILogManager>()).GetType().ToString());
+            result.Append("<br />:: ILogManager: " + (DependencyResolver.Current.GetService<ILogManager>()).GetType().ToString());
 
             AppTenant tenant = MultiTenantHelper.Tenant;
             result.Append("<br />");
@@ -85,19 +85,19 @@ namespace EasyLOB.Mvc
                     auditTrail.Entity;
                 result.Append("<br />&nbsp;&nbsp;&nbsp;" + domainEntity + " " +
                     auditTrail.LogMode + " " +
-                    auditTrail.LogOperations.Trim());
+                    (auditTrail.LogOperations ?? "").Trim());
             }
 
             result.Append("<br />");
             result.Append("<br /><b>Report</b>");
             result.Append("<br />:: RDL: " + ConfigurationHelper.AppSettings<string>("EasyLOB.Report.RDL.Url"));
-            result.Append("<br />:: RDLC: " + ManagerHelper.EnvironmentManager.ApplicationPath(ConfigurationHelper.AppSettings<string>("EasyLOB.Report.RDLC.Directory")));
+            result.Append("<br />:: RDLC: " + DIHelper.EnvironmentManager.ApplicationPath(ConfigurationHelper.AppSettings<string>("EasyLOB.Report.RDLC.Directory")));
 
             result.Append("<br />");
             result.Append("<br /><b>Security - Authentication</b>");
-            result.Append("<br />:: IAuthenticationManager: " + (ManagerHelper.DIManager.GetService<IAuthenticationManager>()).GetType().ToString());
-            result.Append("<br />:: IIdentityUnitOfWork: " + (ManagerHelper.DIManager.GetService<IIdentityUnitOfWork>()).GetType().ToString());
-            //IAuthenticationManager authenticationManager = ManagerHelper.DIManager.GetService<IAuthenticationManager>();
+            result.Append("<br />:: IAuthenticationManager: " + (DependencyResolver.Current.GetService<IAuthenticationManager>()).GetType().ToString());
+            result.Append("<br />:: IIdentityUnitOfWork: " + (DependencyResolver.Current.GetService<IIdentityUnitOfWork>()).GetType().ToString());
+            //IAuthenticationManager authenticationManager = DependencyResolver.Current.GetService<IAuthenticationManager>();
             //result.Append("<br />:: User Name: " + authenticationManager.UserName);
             //result.Append("<br />:: Role Name(s): " + String.Join(",", authenticationManager.Roles.ToArray()));
             //result.Append("<br />:: Is Administrator ? " + authenticationManager.IsAdministrator.ToString());
@@ -105,8 +105,8 @@ namespace EasyLOB.Mvc
 
             result.Append("<br />");
             result.Append("<br /><b>Security - Authorization</b>");
-            result.Append("<br />:: IAuthorizationManager: " + (ManagerHelper.DIManager.GetService<IAuthorizationManager>()).GetType().ToString());
-            result.Append("<br />:: IActivityUnitOfWork: " + (ManagerHelper.DIManager.GetService<IActivityUnitOfWork>()).GetType().ToString());
+            result.Append("<br />:: IAuthorizationManager: " + (DependencyResolver.Current.GetService<IAuthorizationManager>()).GetType().ToString());
+            result.Append("<br />:: IActivityUnitOfWork: " + (DependencyResolver.Current.GetService<IActivityUnitOfWork>()).GetType().ToString());
 
             HttpSessionStateBase session = Session;
             result.Append("<br />");
@@ -137,12 +137,12 @@ namespace EasyLOB.Mvc
 
             result.Append("<br />");
             result.Append("<br /><b>Web</b>");
-            result.Append("<br />:: Application Directory: " + ManagerHelper.EnvironmentManager.ApplicationDirectory);
-            result.Append("<br />:: Web Directory: " + ManagerHelper.EnvironmentManager.ApplicationPath(ConfigurationHelper.AppSettings<string>("EasyLOB.Directory.Configuration")));
-            result.Append("<br />:: Web Url: " + ManagerHelper.EnvironmentManager.WebUrl);
-            result.Append("<br />:: Web Path: " + ManagerHelper.EnvironmentManager.WebPath);
-            result.Append("<br />:: Web Domain: " + ManagerHelper.EnvironmentManager.WebDomain);
-            result.Append("<br />:: Web SubDomain: " + ManagerHelper.EnvironmentManager.WebSubDomain);
+            result.Append("<br />:: Application Directory: " + DIHelper.EnvironmentManager.ApplicationDirectory);
+            result.Append("<br />:: Web Directory: " + DIHelper.EnvironmentManager.ApplicationPath(ConfigurationHelper.AppSettings<string>("EasyLOB.Directory.Configuration")));
+            result.Append("<br />:: Web Url: " + DIHelper.EnvironmentManager.WebUrl);
+            result.Append("<br />:: Web Path: " + DIHelper.EnvironmentManager.WebPath);
+            result.Append("<br />:: Web Domain: " + DIHelper.EnvironmentManager.WebDomain);
+            result.Append("<br />:: Web SubDomain: " + DIHelper.EnvironmentManager.WebSubDomain);
 
             result.Append("<br />");
             result.Append("<br /><b>HTTP Modules</b>");

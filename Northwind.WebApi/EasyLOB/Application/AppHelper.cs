@@ -37,21 +37,9 @@ namespace EasyLOB
 
         #region Methods
 
-        public static void Setup()
+        public static IMapper SetupMappers()
         {
-            // DI
-            AppDIUnityHelper.SetupNorthwind(); // !!!
-
-            // AutoMapper
-            SetupMappers();
-
-            // Profile
-            SetupProfiles();
-        }
-
-        public static void SetupMappers()
-        {
-            Mapper.Initialize(cfg => {
+            MapperConfiguration config = new MapperConfiguration(cfg => {
                 // ZDataModel <-> ZDTOModel
                 // Activity
                 cfg.AddProfile<ActivityDataAutoMapper>();
@@ -59,21 +47,14 @@ namespace EasyLOB
                 cfg.AddProfile<AuditTrailDataAutoMapper>();
                 // Identity
                 cfg.AddProfile<IdentityDataAutoMapper>();
-                // Northwind
+                // Application
                 cfg.AddProfile<NorthwindDataAutoMapper>(); // !!!
-                // Web API
-                /*
-                // ZViewModel <-> ZDTOModel
-                // Activity
-                cfg.AddProfile<ActivityViewAutoMapper>();
-                // Audit Trail
-                cfg.AddProfile<AuditTrailViewAutoMapper>();
-                // Identity
-                cfg.AddProfile<IdentityViewAutoMapper>();
-                // Northwind
-                cfg.AddProfile<NorthwindViewAutoMapper>(); // !!!
-                */
             });
+
+            config.CompileMappings();
+            config.AssertConfigurationIsValid();
+
+            return config.CreateMapper();
         }
 
         public static void SetupProfiles()
@@ -85,21 +66,8 @@ namespace EasyLOB
             DataHelper.SetupDataProfile("EasyLOB.AuditTrail.Data");
             // Identity
             DataHelper.SetupDataProfile("EasyLOB.Identity.Data");
-            // Northwind
+            // Application
             DataHelper.SetupDataProfile("Northwind.Data"); // !!!
-            // web API
-            /*
-            // ZViewModel
-            string viewAssemblyName = Assembly.GetExecutingAssembly().GetName().Name;
-            // Activity
-            DataHelper.SetupViewProfile("EasyLOB.Activity.Data", viewAssemblyName);
-            // Audit Trail
-            DataHelper.SetupViewProfile("EasyLOB.AuditTrail.Data", viewAssemblyName);
-            // Identity
-            DataHelper.SetupViewProfile("EasyLOB.Identity.Data", viewAssemblyName);
-            // Northwind
-            DataHelper.SetupViewProfile("Northwind.Data", viewAssemblyName); // !!!
-            */
         }
 
         #endregion Methods

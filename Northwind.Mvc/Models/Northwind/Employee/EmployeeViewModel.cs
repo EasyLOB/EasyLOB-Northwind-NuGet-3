@@ -94,7 +94,7 @@ namespace Northwind.Data
 
         #region Associations (FK)
 
-        public virtual string Employee_EmployeeLookupText { get; set; } // ReportsTo
+        public virtual string EmployeeEmployeeLookupText { get; set; } // ReportsTo
     
         #endregion Associations (FK)
 

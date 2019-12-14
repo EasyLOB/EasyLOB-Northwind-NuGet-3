@@ -40,23 +40,27 @@
             ]
           },
           {
-            "Text": "PresentationResources.TaskAPI",
+            "Text": "EasyLOBPresentationResources.TaskAPI",
             "Url": "/Tasks/API"
           },
           {
-            "Text": "PresentationResources.TaskCleanLocalStorage",
-            "Url": "/Tasks/CleanLocalStorage"
-          },
-          {
-            "Text": "PresentationResources.TaskCleanExportImport",
+            "Text": "EasyLOBPresentationResources.TaskCleanExportImport",
             "Url": "/Tasks/CleanExportImport"
           },
           {
-            "Text": "PresentationResources.TaskExportProfile",
+            "Text": "EasyLOBPresentationResources.TaskCleanLocalStorage",
+            "Url": "/Tasks/CleanLocalStorage"
+          },
+          {
+            "Text": "EasyLOBPresentationResources.TaskExportAutoMapper",
+            "Url": "/Tasks/ExportAutoMapper"
+          },
+          {
+            "Text": "EasyLOBPresentationResources.TaskExportProfile",
             "Url": "/Tasks/ExportProfile"
           },
           {
-            "Text": "PresentationResources.TaskHelp",
+            "Text": "EasyLOBPresentationResources.TaskHelp",
             "Url": "/Tasks/Help"
           },
           {
@@ -64,11 +68,11 @@
             "Url": "/Tasks/NLog"
           },
           {
-            "Text": "PresentationResources.TaskStatus",
+            "Text": "EasyLOBPresentationResources.TaskStatus",
             "Url": "/Tasks/Status"
           },
           {
-            "Text": "PresentationResources.TaskUrlDictionary",
+            "Text": "EasyLOBPresentationResources.TaskUrlDictionary",
             "Url": "/Tasks/UrlDictionary"
           }
         ]
@@ -133,7 +137,7 @@
             ]
           },
           {
-            "Text": "SecurityResources.TaskExportSecurity",
+            "Text": "EasyLOBPresentationResources.TaskExportSecurity",
             "Url": "/Tasks/ExportSecurity"
           }
         ]

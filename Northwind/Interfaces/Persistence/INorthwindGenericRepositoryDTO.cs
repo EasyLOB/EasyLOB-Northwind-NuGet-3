@@ -1,7 +1,6 @@
 using EasyLOB;
-using EasyLOB.Data;
 
-namespace Northwind.Persistence
+namespace Northwind
 {
     public interface INorthwindGenericRepositoryDTO<TEntityDTO, TEntity> : IGenericRepositoryDTO<TEntityDTO, TEntity>
         where TEntityDTO : class, IZDTOBase<TEntityDTO, TEntity>

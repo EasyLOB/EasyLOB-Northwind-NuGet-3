@@ -46,7 +46,7 @@ namespace EasyLOB
 
         public static void Logout()
         {
-            ManagerHelper.EnvironmentManager.SessionAbandon();
+            DIHelper.EnvironmentManager.SessionAbandon();
         }
 
         public static string PageTitle(string entity, string action, string actionResource, bool isMasterDetail = false)

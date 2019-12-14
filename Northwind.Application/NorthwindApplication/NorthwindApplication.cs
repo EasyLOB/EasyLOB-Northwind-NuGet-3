@@ -1,6 +1,4 @@
-﻿using EasyLOB;
-using Northwind.Persistence;
-using System;
+﻿using System;
 
 namespace Northwind.Application
 {
@@ -10,16 +8,13 @@ namespace Northwind.Application
 
         public INorthwindUnitOfWork UnitOfWork { get; }
 
-        public IDIManager DIManager { get; }
-
         #endregion Properties
 
         #region Methods
 
-        public NorthwindApplication(INorthwindUnitOfWork unitOfWork, IDIManager diManager)
+        public NorthwindApplication(INorthwindUnitOfWork unitOfWork)
         {
             UnitOfWork = unitOfWork;
-            DIManager = diManager;
         }
 
         #endregion Methods

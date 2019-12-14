@@ -1,4 +1,6 @@
+using AutoMapper;
 using EasyLOB.Environment;
+using EasyLOB.Extensions.Mail;
 using Unity;
 using Unity.Injection;
 using Unity.Lifetime;
@@ -14,7 +16,7 @@ namespace EasyLOB
 
         private static IUnityContainer Container { get; set; }
 
-        private static LifetimeManager AppLifetimeManager
+        private static ITypeLifetimeManager AppLifetimeManager
         {
             // A new object for every HttpRequest
             //get { return new HttpRequestLifetimeManager(); }
@@ -57,12 +59,19 @@ namespace EasyLOB
             SetupIdentity();
             SetupLog();
 
+            SetupApplication(); // !!!
+
             //Container.RegisterType(typeof(IEnvironmentManager), typeof(EnvironmentManagerDesktop), AppLifetimeManager);
             Container.RegisterType(typeof(IEnvironmentManager), typeof(EnvironmentManagerWeb), AppLifetimeManager);
 
-            ManagerHelper.Setup(new DIManagerUnity(Container),
+            IMapper mapper = AppHelper.SetupMappers();
+            AppHelper.SetupProfiles();
+
+            DIHelper.Setup(new DIManagerUnity(Container),
                 Container.Resolve<IEnvironmentManager>(),
-                Container.Resolve<ILogManager>());
+                Container.Resolve<ILogManager>(),
+                Container.Resolve<IMailManager>(),
+                mapper);
         }
 
         #endregion Methods

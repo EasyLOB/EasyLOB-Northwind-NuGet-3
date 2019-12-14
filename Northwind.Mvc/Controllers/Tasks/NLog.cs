@@ -39,7 +39,7 @@ namespace EasyLOB.Mvc
                 {
                     if (IsValid(viewModel.OperationResult, viewModel))
                     {
-                        ILogManager logManager = ManagerHelper.DIManager.GetService<ILogManager>();
+                        ILogManager logManager = DependencyResolver.Current.GetService<ILogManager>();
 
                         logManager.Trace("Trace");
                         logManager.Debug("Debug");

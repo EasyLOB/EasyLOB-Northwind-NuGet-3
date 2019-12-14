@@ -12,8 +12,8 @@ namespace EasyLOB
         {
             if (String.IsNullOrEmpty(ProfileHelper.Profile.UserName))
             {
-                ProfileHelper.Login(ManagerHelper.DIManager.GetService<IAuthenticationManager>(),
-                    ManagerHelper.DIManager.GetService<IAuditTrailUnitOfWork>());
+                ProfileHelper.Login(DependencyResolver.Current.GetService<IAuthenticationManager>(),
+                    DependencyResolver.Current.GetService<IAuditTrailUnitOfWork>());
             }
 
             base.OnActionExecuting(filterContext);

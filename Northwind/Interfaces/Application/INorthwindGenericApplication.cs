@@ -1,7 +1,6 @@
 using EasyLOB;
-using EasyLOB.Data;
 
-namespace Northwind.Application
+namespace Northwind
 {
     public interface INorthwindGenericApplication<TEntity>
         : IGenericApplication<TEntity>

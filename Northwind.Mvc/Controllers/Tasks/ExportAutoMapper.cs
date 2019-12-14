@@ -73,7 +73,7 @@ namespace EasyLOB.Mvc
             {
                 using (StreamWriter stream = new StreamWriter(filePath))
                 {
-                    TypeMap[] typeMaps = Mapper.Configuration.GetAllTypeMaps();
+                    TypeMap[] typeMaps = DIHelper.Mapper.ConfigurationProvider.GetAllTypeMaps();
                     foreach (TypeMap typeMap in typeMaps)
                     {
                         stream.WriteLine("{0} -> {1}", typeMap.SourceType.ToString(), typeMap.DestinationType.ToString());

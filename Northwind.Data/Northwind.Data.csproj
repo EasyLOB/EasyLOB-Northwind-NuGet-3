@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Northwind.Data</RootNamespace>
     <AssemblyName>Northwind.Data</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -30,35 +30,29 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AutoMapper, Version=7.0.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoMapper.7.0.1\lib\net45\AutoMapper.dll</HintPath>
+    <Reference Include="AutoMapper, Version=9.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.9.0.0\lib\net461\AutoMapper.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.2\lib\net46\EasyLOB.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.1.0\lib\net46\EasyLOB.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Application, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.2\lib\net46\EasyLOB.Application.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.1.0\lib\net46\EasyLOB.Application.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.2\lib\net46\EasyLOB.Data.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.1.0\lib\net46\EasyLOB.Data.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Environment, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.2\lib\net46\EasyLOB.Environment.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.1.0\lib\net46\EasyLOB.Environment.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.2\lib\net46\EasyLOB.Library.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.1.0\lib\net46\EasyLOB.Library.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Log, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.2\lib\net46\EasyLOB.Log.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.1.0\lib\net46\EasyLOB.Log.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.LogNLog, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.2\lib\net46\EasyLOB.LogNLog.dll</HintPath>
-    </Reference>
-    <Reference Include="EasyLOB.Persistence, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.2\lib\net46\EasyLOB.Persistence.dll</HintPath>
-    </Reference>
-    <Reference Include="EasyLOB.PersistenceEntityFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.2\lib\net46\EasyLOB.PersistenceEntityFramework.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.LogNLog.3.1.0\lib\net46\EasyLOB.LogNLog.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -111,7 +105,6 @@
     <Compile Include="DTOs\SupplierDTO.cs" />
     <Compile Include="DTOs\TerritoryDTO.cs" />
     <Compile Include="NorthwindDataAutoMapper.cs" />
-    <Compile Include="NorthwindDataHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\CategoryResources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -245,6 +238,12 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>TerritoryResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Northwind\Northwind.csproj">
+      <Project>{03ee3cd2-68cd-455b-986d-022cb8ffd94f}</Project>
+      <Name>Northwind</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

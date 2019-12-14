@@ -14,7 +14,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Northwind.WebApi</RootNamespace>
     <AssemblyName>Northwind.WebApi</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -45,98 +45,98 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AutoMapper, Version=7.0.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoMapper.7.0.1\lib\net45\AutoMapper.dll</HintPath>
+    <Reference Include="AutoMapper, Version=9.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.9.0.0\lib\net461\AutoMapper.dll</HintPath>
     </Reference>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
       <HintPath>..\packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.2\lib\net46\EasyLOB.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.1.0\lib\net46\EasyLOB.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Activity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.Security.3.0.2\lib\net46\EasyLOB.Activity.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.Security.3.1.0\lib\net46\EasyLOB.Activity.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Activity.Application, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.Security.3.0.2\lib\net46\EasyLOB.Activity.Application.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.Security.3.1.0\lib\net46\EasyLOB.Activity.Application.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Activity.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.Security.3.0.2\lib\net46\EasyLOB.Activity.Data.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.Security.3.1.0\lib\net46\EasyLOB.Activity.Data.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Activity.PersistenceEntityFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.Security.3.0.2\lib\net46\EasyLOB.Activity.PersistenceEntityFramework.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.Security.3.1.0\lib\net46\EasyLOB.Activity.PersistenceEntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Application, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.2\lib\net46\EasyLOB.Application.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.1.0\lib\net46\EasyLOB.Application.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.AuditTrail, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.AuditTrail.3.0.2\lib\net46\EasyLOB.AuditTrail.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.1.0\lib\net46\EasyLOB.AuditTrail.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.AuditTrail.Application, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.AuditTrail.3.0.2\lib\net46\EasyLOB.AuditTrail.Application.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.AuditTrail.3.1.0\lib\net46\EasyLOB.AuditTrail.Application.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.AuditTrail.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.AuditTrail.3.0.2\lib\net46\EasyLOB.AuditTrail.Data.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.AuditTrail.3.1.0\lib\net46\EasyLOB.AuditTrail.Data.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.AuditTrail.PersistenceEntityFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.AuditTrail.3.0.2\lib\net46\EasyLOB.AuditTrail.PersistenceEntityFramework.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.AuditTrail.3.1.0\lib\net46\EasyLOB.AuditTrail.PersistenceEntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.AuditTrailManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.AuditTrail.3.0.2\lib\net46\EasyLOB.AuditTrailManager.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.AuditTrail.3.1.0\lib\net46\EasyLOB.AuditTrailManager.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.2\lib\net46\EasyLOB.Data.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.1.0\lib\net46\EasyLOB.Data.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.DIUnity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.DIUnity.3.0.2\lib\net46\EasyLOB.DIUnity.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.DIUnity.3.1.0\lib\net46\EasyLOB.DIUnity.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Environment, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.2\lib\net46\EasyLOB.Environment.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.1.0\lib\net46\EasyLOB.Environment.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.EnvironmentWeb, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.EnvironmentWeb.3.0.2\lib\net46\EasyLOB.EnvironmentWeb.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.EnvironmentWeb.3.1.0\lib\net46\EasyLOB.EnvironmentWeb.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Extensions.Edm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.Extensions.Edm.3.0.2\lib\net46\EasyLOB.Extensions.Edm.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.Extensions.Edm.3.1.0\lib\net46\EasyLOB.Extensions.Edm.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Extensions.Ini, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.Extensions.Ini.3.0.2\lib\net46\EasyLOB.Extensions.Ini.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.Extensions.Ini.3.1.0\lib\net46\EasyLOB.Extensions.Ini.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Extensions.Mail, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.Extensions.Mail.3.0.2\lib\net46\EasyLOB.Extensions.Mail.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.Extensions.Mail.3.1.0\lib\net46\EasyLOB.Extensions.Mail.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Identity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.Security.3.0.2\lib\net46\EasyLOB.Identity.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.Security.3.1.0\lib\net46\EasyLOB.Identity.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Identity.Application, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.Security.3.0.2\lib\net46\EasyLOB.Identity.Application.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.Security.3.1.0\lib\net46\EasyLOB.Identity.Application.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Identity.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.Security.3.0.2\lib\net46\EasyLOB.Identity.Data.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.Security.3.1.0\lib\net46\EasyLOB.Identity.Data.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Identity.PersistenceEntityFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.Security.3.0.2\lib\net46\EasyLOB.Identity.PersistenceEntityFramework.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.Security.3.1.0\lib\net46\EasyLOB.Identity.PersistenceEntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.IdentityEntityFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.Security.3.0.2\lib\net46\EasyLOB.IdentityEntityFramework.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.Security.3.1.0\lib\net46\EasyLOB.IdentityEntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.2\lib\net46\EasyLOB.Library.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.1.0\lib\net46\EasyLOB.Library.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Log, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.2\lib\net46\EasyLOB.Log.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.1.0\lib\net46\EasyLOB.Log.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.LogNLog, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.2\lib\net46\EasyLOB.LogNLog.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.LogNLog.3.1.0\lib\net46\EasyLOB.LogNLog.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Persistence, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.2\lib\net46\EasyLOB.Persistence.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.1.0\lib\net46\EasyLOB.Persistence.dll </HintPath>
     </Reference>
     <Reference Include="EasyLOB.PersistenceEntityFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.3.0.2\lib\net46\EasyLOB.PersistenceEntityFramework.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.PersistenceEntityFramework.3.1.0\lib\net46\EasyLOB.PersistenceEntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EasyLOB.Security, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasyLOB.Security.3.0.2\lib\net46\EasyLOB.Security.dll</HintPath>
+      <HintPath>..\packages\EasyLOB.3.1.0\lib\net46\EasyLOB.Security.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.3.0\lib\net45\EntityFramework.dll</HintPath>
@@ -256,11 +256,17 @@
       <HintPath>..\packages\System.Linq.Dynamic.1.0.7\lib\net40\System.Linq.Dynamic.dll</HintPath>
     </Reference>
     <Reference Include="System.Net" />
-    <Reference Include="System.Net.Http.Formatting, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.6\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Security" />
     <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.2\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="System.Transactions" />
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
@@ -271,31 +277,31 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.Helpers.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.Http, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.6\lib\net45\System.Web.Http.dll</HintPath>
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.Http.Owin, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.Owin.5.2.6\lib\net45\System.Web.Http.Owin.dll</HintPath>
+    <Reference Include="System.Web.Http.Owin, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Owin.5.2.7\lib\net45\System.Web.Http.Owin.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.Http.WebHost, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.6\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.Mvc, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.6\lib\net45\System.Web.Mvc.dll</HintPath>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.6\lib\net45\System.Web.Razor.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.WebPages.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
@@ -315,14 +321,14 @@
     <Reference Include="System.Web.Optimization">
       <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Abstractions, Version=3.3.1.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.Abstractions.3.3.1\lib\net46\Unity.Abstractions.dll</HintPath>
+    <Reference Include="Unity.Abstractions, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Abstractions.5.11.1\lib\net46\Unity.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Container, Version=5.8.13.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.Container.5.8.13\lib\net46\Unity.Container.dll</HintPath>
+    <Reference Include="Unity.Container, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Container.5.11.1\lib\net46\Unity.Container.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Mvc, Version=5.0.15.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.Mvc.5.0.15\lib\net46\Unity.Mvc.dll</HintPath>
+    <Reference Include="Unity.Mvc, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Mvc.5.11.1\lib\net46\Unity.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
       <HintPath>..\packages\WebActivatorEx.2.2.0\lib\net40\WebActivatorEx.dll</HintPath>
@@ -392,12 +398,12 @@
     <Compile Include="EasyLOB\EasyLOB\AppDIUnityHelperExtensions.cs" />
     <Compile Include="EasyLOB\Identity\AppDIUnityHelperIdentity.cs" />
     <Compile Include="EasyLOB\EasyLOB\AppDIUnityHelperLog.cs" />
-    <Compile Include="EasyLOB\Northwind\AppDefaults.cs" />
-    <Compile Include="EasyLOB\Northwind\AppDIUnityHelperNorthwind.cs" />
+    <Compile Include="EasyLOB\Application\AppDefaults.cs" />
+    <Compile Include="EasyLOB\Application\AppDIUnityHelperApplication.cs" />
     <Compile Include="EasyLOB\Filters\EasyLOBMultiTenantAttribute.cs" />
     <Compile Include="EasyLOB\Filters\EasyLOBProfileAttribute.cs" />
-    <Compile Include="EasyLOB\Northwind\AppHelper.cs" />
-    <Compile Include="EasyLOB\Northwind\NorthwindProfileAttribute.cs" />
+    <Compile Include="EasyLOB\Application\AppHelper.cs" />
+    <Compile Include="EasyLOB\Application\NorthwindProfileAttribute.cs" />
     <Compile Include="EasyLOB\Identity\AppHelper.cs" />
     <Compile Include="EasyLOB\Identity\IdentityViewAutoMapper.cs" />
     <Compile Include="EasyLOB\MVC\AppDefaults.cs" />
@@ -405,7 +411,7 @@
     <Compile Include="EasyLOB\MVC\CultureAttribute.cs" />
     <Compile Include="EasyLOB\MVC\CustomRazorViewEngine.cs" />
     <Compile Include="EasyLOB\MVC\ValidateModelStateAttribute.cs" />
-    <Compile Include="EasyLOB\Northwind\NorthwindViewAutoMapper.cs" />
+    <Compile Include="EasyLOB\Application\NorthwindViewAutoMapper.cs" />
     <Compile Include="EasyLOB\Syncfusion\Dashboard\DashboardServiceSerialization.cs" />
     <Compile Include="EasyLOB\Syncfusion\Dashboard\DashboardViewer.cs" />
     <Compile Include="EasyLOB\Syncfusion\Excel\SyncfusionExcelExtensions.cs" />
@@ -763,26 +769,6 @@
     <Content Include="EasyLOB-Configuration\JSON\MultiTenant.json" />
     <Content Include="EasyLOB-Configuration\JSON\NorthwindMultiTenant.json" />
     <Content Include="EasyLOB-Templates\Security.xlsx" />
-    <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Web.config" />
-    <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\Index.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ModelDescriptionLink.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\KeyValuePairModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\EnumTypeModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\DictionaryModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ComplexTypeModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -856,6 +842,26 @@
     <Content Include="Content\ej\mobile\images\ejmmobilefonts.ttf" />
     <Content Include="Content\ej\mobile\images\ejmmobilefonts.svg" />
     <Content Include="Content\ej\mobile\images\ejmmobilefonts.eot" />
+    <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Web.config" />
+    <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Index.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ModelDescriptionLink.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\KeyValuePairModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\EnumTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\DictionaryModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ComplexTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>
     </None>

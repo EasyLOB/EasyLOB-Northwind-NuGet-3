@@ -1,6 +1,6 @@
 using EasyLOB;
-using EasyLOB.Data;
 using EasyLOB.Mvc;
+using Northwind.Persistence;
 
 namespace Northwind.Mvc
 {
@@ -8,15 +8,15 @@ namespace Northwind.Mvc
     {
         #region Properties
 
-        protected INorthwindApplication Application { get; }
+        protected INorthwindUnitOfWork UnitOfWork { get; }
 
         #endregion Properties
 
         #region Methods
 
-        public NorthwindTasksController(INorthwindApplication application)
+        public NorthwindTasksController(INorthwindUnitOfWork unitOfWork)
         {
-            Application = application;
+            UnitOfWork = unitOfWork;
         }
 
         protected override bool IsValid(ZOperationResult operationResult, IZValidatableObject entity)

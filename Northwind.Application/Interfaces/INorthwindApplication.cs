@@ -1,4 +1,3 @@
-using EasyLOB;
 using System;
 
 namespace Northwind
@@ -7,7 +6,7 @@ namespace Northwind
     {
         #region Properties
 
-        IDIManager DIManager { get; }
+        INorthwindUnitOfWork UnitOfWork { get; }
 
         #endregion Properties
     }

@@ -46,11 +46,11 @@ namespace Northwind.Data
         
         public virtual int? ReportsTo
         {
-            get { return this.Employee_Employee == null ? _reportsTo : this.Employee_Employee.EmployeeId; }
+            get { return this.EmployeeEmployee == null ? _reportsTo : this.EmployeeEmployee.EmployeeId; }
             set
             {
                 _reportsTo = value;
-                Employee_Employee = null;
+                EmployeeEmployee = null;
             }
         }
         
@@ -60,7 +60,7 @@ namespace Northwind.Data
 
         #region Associations (FK)
 
-        public virtual Employee Employee_Employee { get; set; } // ReportsTo
+        public virtual Employee EmployeeEmployee { get; set; } // ReportsTo
 
         #endregion Associations (FK)
 

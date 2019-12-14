@@ -1,6 +1,6 @@
 using EasyLOB;
 
-namespace Northwind.Persistence
+namespace Northwind
 {
     public interface INorthwindUnitOfWork : IUnitOfWork
     {

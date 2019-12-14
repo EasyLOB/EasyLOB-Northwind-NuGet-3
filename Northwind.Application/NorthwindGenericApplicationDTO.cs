@@ -1,7 +1,5 @@
-﻿using Northwind.Persistence;
-using EasyLOB;
+﻿using EasyLOB;
 using EasyLOB.Application;
-using EasyLOB.Data;
 
 namespace Northwind.Application
 {
@@ -12,8 +10,10 @@ namespace Northwind.Application
     {
         #region Methods
 
-        public NorthwindGenericApplicationDTO(INorthwindUnitOfWork unitOfWork)
-            : base(unitOfWork)
+        public NorthwindGenericApplicationDTO(INorthwindUnitOfWork unitOfWork,
+            IAuditTrailManager auditTrailManager,
+            IAuthorizationManager authorizationManager)
+            : base(unitOfWork, auditTrailManager, authorizationManager)
         {
         }
 

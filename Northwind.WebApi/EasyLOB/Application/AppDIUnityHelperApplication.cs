@@ -7,7 +7,7 @@ namespace EasyLOB
 {
     public static partial class AppDIUnityHelper
     {
-        public static void SetupNorthwind() // !!!
+        public static void SetupApplication() // !!!
         {
             Container.RegisterType(typeof(INorthwindApplication), typeof(NorthwindApplication), AppLifetimeManager);
 
