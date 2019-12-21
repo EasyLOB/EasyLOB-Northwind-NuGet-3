@@ -14,8 +14,6 @@ namespace EasyLOB
     {
         #region Properties
 
-        private static IUnityContainer Container { get; set; }
-
         private static ITypeLifetimeManager AppLifetimeManager
         {
             // A new object for every HttpRequest
@@ -48,30 +46,24 @@ namespace EasyLOB
 
         public static void Setup(IUnityContainer container)
         {
-            Container = container;
+            container.RegisterType<Authentication.AuthenticationController>(new InjectionConstructor());
 
-            Container.RegisterType<Authentication.AuthenticationController>(new InjectionConstructor());
+            SetupActivity(container);
+            SetupAuditTrail(container);
+            SetupEasyLOB(container);
+            SetupExtensions(container);
+            SetupIdentity(container);
+            SetupLog(container);
 
-            SetupActivity();
-            SetupAuditTrail();
-            SetupEasyLOB();
-            SetupExtensions();
-            SetupIdentity();
-            SetupLog();
+            SetupApplication(container); // !!!
 
-            SetupApplication(); // !!!
-
-            //Container.RegisterType(typeof(IEnvironmentManager), typeof(EnvironmentManagerDesktop), AppLifetimeManager);
-            Container.RegisterType(typeof(IEnvironmentManager), typeof(EnvironmentManagerWeb), AppLifetimeManager);
+            //container.RegisterType(typeof(IEnvironmentManager), typeof(EnvironmentManagerDesktop), AppLifetimeManager);
+            container.RegisterType(typeof(IEnvironmentManager), typeof(EnvironmentManagerWeb), AppLifetimeManager);
 
             IMapper mapper = AppHelper.SetupMappers();
             AppHelper.SetupProfiles();
 
-            DIHelper.Setup(new DIManagerUnity(Container),
-                Container.Resolve<IEnvironmentManager>(),
-                Container.Resolve<ILogManager>(),
-                Container.Resolve<IMailManager>(),
-                mapper);
+            DIHelper.Setup(new DIManagerUnity(container), mapper);
         }
 
         #endregion Methods
