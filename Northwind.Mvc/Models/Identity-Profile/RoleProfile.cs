@@ -1,4 +1,4 @@
-using EasyLOB.Data;
+using EasyLOB;
 
 namespace EasyLOB.Identity.Data
 {
