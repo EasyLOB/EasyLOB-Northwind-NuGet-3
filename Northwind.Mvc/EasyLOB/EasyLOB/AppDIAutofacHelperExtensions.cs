@@ -9,17 +9,14 @@ namespace EasyLOB
     {
         public static void SetupExtensions(ContainerBuilder containerBuilder)
         {
-            //containerBuilder.RegisterType<EdmManagerMock>().As<IEdmManager>()
-            containerBuilder.RegisterType<EdmManagerFileSystem>().As<IEdmManager>()
-            //containerBuilder.RegisterType<EdmManagerFTP>().As<IEdmManager>()
-                .InstancePerRequest();
+            //containerBuilder.RegisterType<EdmManagerMock>().As<IEdmManager>();
+            containerBuilder.RegisterType<EdmManagerFileSystem>().As<IEdmManager>();
+            //containerBuilder.RegisterType<EdmManagerFTP>().As<IEdmManager>();
 
-            //containerBuilder.RegisterType<IniManagerMock>().As<IIniManager>()
-            containerBuilder.RegisterType<IniManager>().As<IIniManager>()
-                .InstancePerRequest();
+            //containerBuilder.RegisterType<IniManagerMock>().As<IIniManager>();
+            containerBuilder.RegisterType<IniManager>().As<IIniManager>();
 
-            // DIHelper
-            //containerBuilder.RegisterType<MailManagerMock>().As<IMailManager>(0);
+            //containerBuilder.RegisterType<MailManagerMock>().As<IMailManager>();
             containerBuilder.RegisterType<MailManager>().As<IMailManager>();
         }
     }
