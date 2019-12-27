@@ -1,6 +1,5 @@
 ﻿using EasyLOB.AuditTrail;
 using EasyLOB.Environment;
-using EasyLOB.Security;
 using System;
 using System.Web.Mvc;
 
